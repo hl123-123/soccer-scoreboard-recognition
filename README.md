@@ -40,7 +40,7 @@
 
 1. 首先将视频使用"ffmpeg"进行抽帧(默认2帧每秒)，输出中间文件夹 ./myvideo
 
-2. 2个txt文件，分别为 ./myvideo.json 和 ./myvideo.raw.json ,./myvideo.json 输出的就是第一次识别到记分牌比赛时间信息和视频跳跃的信息和比分变动的信息，./myvideo.raw.json 输出的是每一帧的信息（方便进行中间检查）。
+2. 2个json文件，分别为 ./myvideo.json 和 ./myvideo.raw.json ,./myvideo.json 输出的就是第一次识别到记分牌比赛时间信息和视频跳跃的信息和比分变动的信息，./myvideo.raw.json 输出的是每一帧的信息（方便进行中间检查）。
 
 > ./myvideo.json 内容 
 > ![](https://ai-studio-static-online.cdn.bcebos.com/76242a4a11df4454a1b952a9067e2da7140c446ac0a043fbac98a7b27e9c0635)
