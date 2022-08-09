@@ -64,7 +64,7 @@
 >team_list_file为预设全部足球比赛的队伍名称信息
 
 3.  parser.add_argument('--output_dir', type=str,default="")
-> 如果不填参数则2个txt和抽帧文件夹为video_file同路径。 如果out_dir为./12/video1 那么2个txt文件路径为./12/video1need.txt 和 ./12/video1all.txt 那么抽帧图片文件夹为./12/video1。
+> 如果不填参数则2个json和抽帧文件夹为video_file同路径。 如果out_dir为./12/video1 那么2个txt文件路径为./12/video1.json 和 ./12/video1.raw.json 那么抽帧图片文件夹为./12/video1。
 
 4. parser.add_argument("--extract_frames_fps帧",type=int,default=2)
 > ffmpeg一秒extract_frames_fps帧
@@ -190,7 +190,8 @@
 
 ```python
 !pip install -r ./PaddleOCR2_5/requirements.txt
-!python main.py --video_file data/data162746/myvideo1.mp4 --output_dir output/video1 --seq_second 5
+#请先创建空文件夹./output 和下载测试的mp4数据集
+!python main.py --video_file ./myvideo1.mp4 --output_dir output/video1 --seq_second 5
 
 from main import get_video_time_from_game_time
 '''
